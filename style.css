@@ -17,7 +17,7 @@ body {
 
 .header {
 	grid-column: span 12; 
-	background-color: #1b1c22;
+	background-color: red;
 	color: #fff;
 	padding: 12px;
 	display: flex;
