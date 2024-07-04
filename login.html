@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<htmml>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="main.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <title>Tradelog.Login</title>
+        <script defer src="valid.js"></script>
+    </head>
+    <body>
+        <div id="login-content">
+            <!--Header-->
+            <header class="header">
+                <div class="header-left">
+                    <h3>Tradelog.info</h3>
+                    <span style="font-size: auto; cursor: pointer; color: white" class="nav"&#9776;></span>
+                </div>
+
+                <div class="header-right">
+                    <div class="header-right-title">
+                        <p>Create New Trade</p>
+                    </div>
+                    <div class="header-right-icon">
+						<i class="fa fa-windows"></i>
+						<i class="fa fa-envelope"></i>
+						<i class="fa fa-bell"></i>
+						<i class="fa fa-cog"></i>
+						<i class="fa fa-sign-out"></i>
+						<a href="#" class="icon-ai"><i class="fa fa-user"></i>&nbsp;&nbsp;Tan Khang</a>
+					</div>
+                </div>
+            </header>
+
+            <!--Sidebar-->
+			<div id="sidenav">
+				<ul class="left-side-list">
+					<li class="list-item">
+						<a href="#" class="icon-ai"><i class="fa fa-tachometer"></i>&nbsp;&nbsp;Dashboard</a>
+					</li>
+					<li class="list-item">
+						<a href="#" class="icon-a"><i class="fa fa-list icons"></i>&nbsp;&nbsp;Transactions</a>
+					</li>
+					<li class="list-item">
+						<a href="#" class="icon-a"><i class="fa fa-desktop"></i>&nbsp;&nbsp;Basic UI Elements</a>
+					</li>
+					<li class="list-item">
+						<a href="#" class="icon-a"><i class="fa fa-table"></i>&nbsp;&nbsp;Tables</a>
+					</li>
+					<li class="list-item">
+						<a href="#" class="icon-a"><i class="fa fa-bar-chart"></i>&nbsp;&nbsp;Charts</a>
+					</li>
+					<li class="list-item">
+						<a href="#" class="icon-a"><i class="fa fa-user"></i>&nbsp;&nbsp;Icons</a>
+					</li>
+					<li class="list-item">
+						<a href="#" class="icon-a"><i class="fa fa-shield"></i>&nbsp;&nbsp;User pages</a>
+					</li>
+					<li class="list-item">
+						<a href="#" class="icon-a"><i class="fa fa-book"></i>&nbsp;&nbsp;Documentation</a>
+					</li>
+				</ul>
+			</div>
+
+            <div class="main-login">
+                <!--Main-->
+                <main class="main-login-container">
+                    <form id="form-login" action="/">
+                        <h1>Login</h1>
+                        <div class="input-control">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email">
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="input-control">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                            <div class="error"></div>
+                        </div>
+
+                        <div class="link-forgot">
+                            <a href="#">Forgot your password?</a>
+                        </div>
+
+                        <div class="input-checkbox">
+                            <input type="checkbox" id="checkbox" name="checkbox">
+                            <label for="checkbox">Remember me</label>
+                        </div>
+
+                        <div class="login-button">
+                            <button type="submit">Log in</button>
+                        </div>
+
+                        <div class="login-label">
+                            <label for="account">Don't have account?</label>
+                            <a href="#">Sign up</a>
+                        </div>
+                    </form>
+                </main>
+            </div>
+        </div>
+    </body>
+</htmml>

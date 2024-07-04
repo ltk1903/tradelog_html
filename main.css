@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+#login-content {
+    display: grid;
+	grid-template-columns: 140px 140px repeat(10, 1fr);
+	height: 100%;
+}
+
+/*Header*/
+.header {
+	grid-column: span 12; 
+	background-color: #1b1c22;
+	color: #fff;
+	padding: 12px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    z-index: 1000;
+	position: fixed;
+	width: 100%;
+    top: 0;  
+}
+
+.header-left h2 {
+	color: #2ecc71;
+}
+
+/*Sidebar*/
+
+#sidenav {
+	grid-column: span 2;
+	height: 100%;
+	background: #1b1c22;
+}
+
+.left-side-list {
+	list-style: none;
+}
+
+.left-side-list > li {
+	padding: 8px 16px;
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	z-index: 1;
+}
+
+.left-side-list > li::before {
+	background-color: transparent;
+	width: 0;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "";
+	z-index: 0;
+}
+
+.left-side-list > li:hover::before {
+	background-color: #000; 
+	border-radius: 0 10px 10px 0; 
+	width: 85%;
+	z-index: -1;
+}
+
+.left-side-list > li:hover {
+	cursor: pointer;
+}
+
+.left-side-list > li:hover a {
+	color: #fff;
+}
+
+.left-side-list > li::before {
+	transition: 0.3s;
+}
+
+.left-side-list > li > a {
+	color: #6e6d88;
+	text-decoration: none;
+}
+
+.left-side-list li a i {
+	background-color: #2b303d;
+	border-radius: 50%;
+	padding: 10px;
+	margin-right: 10px;
+	font-size: 10px;
+}
+
+.header-left {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 100%;
+}
+
+.header-left h3 {
+	color: #3fce56;
+}
+
+.header-right {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 2%;
+	width: 550px;
+}
+
+.header-right-title {
+	white-space: nowrap; 
+	line-height: 1;
+}
+
+.header-right-icon {
+	display: flex;
+	justify-content: space-around;
+	gap: 5px;
+	flex: 1;
+}
+
+.header-right-icon i {
+	color: white;
+	cursor: pointer;
+	position: relative;
+}
+
+.header-right-icon i:not(:last-child)::after {
+	content: "";
+	height: 100%; 
+	width: 1px; 
+	background-color: white; 
+	position: absolute;
+	right: -33px; 
+	top: 0;
+	bottom: 0;
+}
+
+.header-right-icon a {
+	color: #f0f0f0;
+}
+
+.header-right-title {
+	padding: 8px 16px;
+	cursor: pointer;
+	background-color: #3fce56;
+	border-radius: 4px;
+}
+
+/*Content*/
+.main-login {
+    grid-column: span 10;
+	height: 100%;
+	background-color: #000;
+	padding: 32px 180px 0 180px;
+	color: white;
+}
+
+.main-login-container {
+    display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto 1fr;
+	gap: 32px;
+	width: 100%;
+	margin-top: 50px;
+}
+
+#form-login {
+	grid-column: span 12;
+	background-color: #1b1c22;
+	padding: 32px;
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-login h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.input-control {
+    margin-bottom: 20px;
+}
+
+.input-control label {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+.input-control input {
+    width: 180%;
+    padding: 10px;
+    border: 1px solid #6e6d88;
+    border-radius: 4px;
+    background-color: #1b1c22;
+    color: #fff;
+}
+
+.input-control.success input {
+	border-color: #3fce56;
+}
+
+.input-control.error input {
+	border-color: red;
+}
+
+.input-control.error {
+	color: red;
+}
+
+.link-forgot a {
+    color: blue;
+}
+
+.input-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-checkbox input {
+    margin-right: 8px;
+}
+
+.input-checkbox label {
+    color: #fff;
+}
+
+.login-button button {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(64, 64, 236);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-label {
+    margin-top: 16px;
+    text-align: center;
+    color: #6e6d88;
+}
+
+.login-label a {
+    color: blue;
+    text-decoration: none;
+}
+
+
